@@ -1,0 +1,50 @@
+{
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": true,
+  "editor.renderWhitespace": "trailing",
+  "editor.rulers": [80],
+  "eslint.validate": ["javascript", "typescript", "vue"],
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*.vue": "${basename}-*.vue, use-${basename}-*.ts",
+    "use-*.ts": "use-${capture}-*.ts",
+    "package.json": "package-lock.json, .editorconfig, .prettierrc, cspell.config.json, eslint.config.ts, postcss.config.ts, tsconfig.json"
+  },
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "markdownlint.config": {
+    "no-duplicate-heading": { "siblings_only": true },
+    "no-inline-html": { "allowed_elements": ["picture", "sub", "sup"] }
+  },
+  "search.exclude": {
+    "**/package-lock.json": true
+  },
+  "todohighlight.isEnable": true,
+  "todohighlight.defaultStyle": {
+    "color": "white",
+    "backgroundColor": "#388e3c",
+    "overviewRulerColor": "#388e3c"
+  },
+  "todohighlight.keywords": [
+    "@todo",
+    {
+      "text": "TODO:",
+      "backgroundColor": "#388e3c",
+      "overviewRulerColor": "#388e3c"
+    },
+    {
+      "text": "FIXME:",
+      "backgroundColor": "#d50000",
+      "overviewRulerColor": "#d50000"
+    }
+  ],
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
