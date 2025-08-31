@@ -1,0 +1,23 @@
+name: LOC graph
+
+on:
+  schedule:
+    - cron: '0 0 * * 1' # Every Monday at midnight
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-loc-graph:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate LOC graph
+        uses: botforge-pro/loc-graph-action@main
+        with:
+          date_format: '%d.%m.%y'
