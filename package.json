@@ -12,6 +12,8 @@
     "dev": "quasar dev",
     "build": "quasar build",
     "postinstall": "quasar prepare",
+    "codegen": "graphql-codegen --config codegen.config.ts",
+    "codegen:watch": "npm run codegen -- --watch",
     "check": "run-p --continue-on-error check:*",
     "check:code": "eslint . --max-warnings 0",
     "check:format": "prettier . --check",
@@ -26,15 +28,19 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.17.0",
+    "graphql": "^16.11.0",
     "pinia": "^3.0.3",
     "quasar": "^2.18.2",
+    "villus": "^3.5.2",
     "vue": "^3.5.20",
     "vue-i18n": "^11.1.11",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.34.0",
+    "@graphql-codegen/cli": "^5.0.7",
     "@intlify/unplugin-vue-i18n": "^4.0.0",
+    "@parcel/watcher": "^2.5.1",
     "@quasar/app-vite": "^2.3.0",
     "@types/node": "^24.3.0",
     "@vue/eslint-config-prettier": "^10.2.0",
