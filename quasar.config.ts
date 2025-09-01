@@ -11,7 +11,7 @@ export default defineConfig(context => ({
   // preFetch: true,
 
   // https://v2.quasar.dev/quasar-cli-vite/boot-files
-  boot: ['i18n'],
+  boot: ['i18n', 'villus'],
 
   // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#css
   css: ['app.sass'],
@@ -117,7 +117,7 @@ export default defineConfig(context => ({
   // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#devserver
   devServer: {
     // https: true,
-    open: true, // opens browser window automatically
+    open: false, // opens browser window automatically
   },
 
   // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#framework

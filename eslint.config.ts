@@ -16,7 +16,7 @@ import globals from 'globals'
 
 export default defineConfigWithVueTs(
   {
-    ignores: ['eslint.config.ts'],
+    ignores: ['eslint.config.ts', 'src/core/graphql'],
   },
   {
     /**
