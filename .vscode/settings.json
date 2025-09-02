@@ -15,7 +15,8 @@
   "explorer.fileNesting.patterns": {
     "*.vue": "${basename}-*.vue, use-${basename}-*.ts",
     "use-*.ts": "use-${capture}-*.ts",
-    "package.json": "package-lock.json, .editorconfig, .prettierrc, cspell.config.json, eslint.config.ts, postcss.config.ts, tsconfig.json"
+    "package.json": "package-lock.json, .editorconfig, .prettierrc, cspell.config.json, eslint.config.ts, postcss.config.ts, tsconfig.json",
+    "quasar.config.ts": "codegen.config.ts, graphql.config.ts"
   },
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "markdownlint.config": {
