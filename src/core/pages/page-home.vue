@@ -4,6 +4,9 @@
       <li v-for="project in data?.projectList" :key="project.name">
         {{ project.name }} by {{ project.author.name }}
       </li>
+      <li>
+        <router-link :to="{ name: 'auth-login' }">Login</router-link>
+      </li>
     </ul>
   </q-page>
 </template>
