@@ -1,6 +1,6 @@
 export const auth = {
   PageLogin: {
-    title: 'Login to @:common.productName',
+    title: 'Log in to @:common.productName',
     options: {
       github: 'GitHub',
     },
