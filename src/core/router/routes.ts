@@ -1,9 +1,11 @@
 import type { RouteRecordRaw } from 'vue-router'
 
+import { authRoutes } from '~/auth/routes'
+
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    component: () => import('~/core/layouts/layout-default.vue'),
+    component: () => import('~/shared/layouts/layout-default.vue'),
     children: [
       {
         path: '',
@@ -12,6 +14,8 @@ const routes: RouteRecordRaw[] = [
       },
     ],
   },
+
+  ...authRoutes,
 
   // Always leave this as last one,
   // but you can also remove it

@@ -8,6 +8,14 @@ import {
 
 import routes from '~/core/router/routes'
 
+import type { AuthRoutes } from '~/auth/routes'
+
+declare module 'vue-router' {
+  interface TypesConfig {
+    RouteNamedMap: AuthRoutes
+  }
+}
+
 /*
  * If not building with SSR mode, you can
  * directly export the Router instantiation;
