@@ -1,5 +1,5 @@
 export const settings = {
-  PageSettings: {
+  PageList: {
     title: 'Settings',
   },
 }
