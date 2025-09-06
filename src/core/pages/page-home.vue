@@ -8,7 +8,7 @@
         <router-link :to="{ name: 'auth-login' }">Login</router-link>
       </li>
       <li>
-        <router-link :to="{ name: 'settings' }">Settings</router-link>
+        <router-link :to="{ name: 'setting-list' }">Settings</router-link>
       </li>
     </ul>
   </q-page>

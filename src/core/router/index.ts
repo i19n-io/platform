@@ -8,11 +8,11 @@ import {
 } from 'vue-router'
 
 import { authRoutes, type AuthRoutes } from '~/auth/routes'
-import { settingsRoutes, type SettingsRoutes } from '~/settings/routes'
+import { settingRoutes, type SettingRoutes } from '~/setting/routes'
 
 declare module 'vue-router' {
   interface TypesConfig {
-    RouteNamedMap: AuthRoutes & SettingsRoutes
+    RouteNamedMap: AuthRoutes & SettingRoutes
   }
 }
 
@@ -30,7 +30,7 @@ const routes: RouteRecordRaw[] = [
   },
 
   ...authRoutes,
-  ...settingsRoutes,
+  ...settingRoutes,
 
   // Always leave this as last one,
   // but you can also remove it
