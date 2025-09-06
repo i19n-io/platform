@@ -10,6 +10,9 @@
       <li>
         <router-link :to="{ name: 'setting-list' }">Settings</router-link>
       </li>
+      <li>
+        <router-link :to="{ name: 'token-list' }">Tokens</router-link>
+      </li>
     </ul>
   </q-page>
 </template>

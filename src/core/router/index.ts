@@ -9,10 +9,11 @@ import {
 
 import { authRoutes, type AuthRoutes } from '~/auth/routes'
 import { settingRoutes, type SettingRoutes } from '~/setting/routes'
+import { tokenRoutes, type TokenRoutes } from '~/token/routes'
 
 declare module 'vue-router' {
   interface TypesConfig {
-    RouteNamedMap: AuthRoutes & SettingRoutes
+    RouteNamedMap: AuthRoutes & SettingRoutes & TokenRoutes
   }
 }
 
@@ -31,6 +32,7 @@ const routes: RouteRecordRaw[] = [
 
   ...authRoutes,
   ...settingRoutes,
+  ...tokenRoutes,
 
   // Always leave this as last one,
   // but you can also remove it
