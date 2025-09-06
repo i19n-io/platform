@@ -4,18 +4,41 @@ import {
   createRouter,
   createWebHashHistory,
   createWebHistory,
+  type RouteRecordRaw,
 } from 'vue-router'
 
-import routes from '~/core/router/routes'
-
-import type { AuthRoutes } from '~/auth/routes'
-import type { SettingsRoutes } from '~/settings/routes'
+import { authRoutes, type AuthRoutes } from '~/auth/routes'
+import { settingsRoutes, type SettingsRoutes } from '~/settings/routes'
 
 declare module 'vue-router' {
   interface TypesConfig {
     RouteNamedMap: AuthRoutes & SettingsRoutes
   }
 }
+
+const routes: RouteRecordRaw[] = [
+  {
+    path: '/',
+    component: () => import('~/shared/layouts/layout-default.vue'),
+    children: [
+      {
+        path: '',
+        name: 'home',
+        component: () => import('~/core/pages/page-home.vue'),
+      },
+    ],
+  },
+
+  ...authRoutes,
+  ...settingsRoutes,
+
+  // Always leave this as last one,
+  // but you can also remove it
+  {
+    path: '/:catchAll(.*)*',
+    component: () => import('~/core/pages/page-error-not-found.vue'),
+  },
+]
 
 /*
  * If not building with SSR mode, you can
