@@ -9,10 +9,11 @@ import {
 import routes from '~/core/router/routes'
 
 import type { AuthRoutes } from '~/auth/routes'
+import type { SettingsRoutes } from '~/settings/routes'
 
 declare module 'vue-router' {
   interface TypesConfig {
-    RouteNamedMap: AuthRoutes
+    RouteNamedMap: AuthRoutes & SettingsRoutes
   }
 }
 

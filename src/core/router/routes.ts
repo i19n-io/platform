@@ -1,6 +1,7 @@
 import type { RouteRecordRaw } from 'vue-router'
 
 import { authRoutes } from '~/auth/routes'
+import { settingsRoutes } from '~/settings/routes'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -16,6 +17,7 @@ const routes: RouteRecordRaw[] = [
   },
 
   ...authRoutes,
+  ...settingsRoutes,
 
   // Always leave this as last one,
   // but you can also remove it
