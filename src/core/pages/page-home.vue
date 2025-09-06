@@ -7,6 +7,9 @@
       <li>
         <router-link :to="{ name: 'auth-login' }">Login</router-link>
       </li>
+      <li>
+        <router-link :to="{ name: 'settings' }">Settings</router-link>
+      </li>
     </ul>
   </q-page>
 </template>
