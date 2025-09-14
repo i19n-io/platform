@@ -12,7 +12,7 @@ export interface TokenRoutes {
 export const tokenRoutes: RouteRecordRaw[] = [
   {
     path: '/',
-    component: () => import('~/shared/layouts/layout-empty.vue'),
+    component: () => import('~/shared/layouts/layout-default.vue'),
     children: [
       {
         path: 'tokens',
