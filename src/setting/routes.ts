@@ -12,7 +12,7 @@ export interface SettingRoutes {
 export const settingRoutes: RouteRecordRaw[] = [
   {
     path: '/',
-    component: () => import('~/shared/layouts/layout-empty.vue'),
+    component: () => import('~/shared/layouts/layout-default.vue'),
     children: [
       {
         path: 'settings',
