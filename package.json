@@ -41,7 +41,7 @@
     "@graphql-codegen/cli": "^5.0.7",
     "@intlify/unplugin-vue-i18n": "^4.0.0",
     "@parcel/watcher": "^2.5.1",
-    "@quasar/app-vite": "^2.3.0",
+    "@quasar/app-vite": "^2.4.0",
     "@types/node": "^24.3.1",
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.6.0",
