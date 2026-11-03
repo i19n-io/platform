@@ -3,5 +3,5 @@
   "version": "0.2",
   "language": "en",
   "files": ["*.md", "src/**/*.ts", "src/**/*.vue"],
-  "words": ["srcset"]
+  "words": ["minifiable"]
 }
