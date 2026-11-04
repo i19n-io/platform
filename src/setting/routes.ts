@@ -4,8 +4,8 @@ export interface SettingRoutes {
   'setting-list': RouteRecordInfo<
     'setting-list',
     '/settings',
-    Record<never, never>,
-    Record<never, never>
+    Record<string, never>,
+    Record<string, never>
   >
 }
 

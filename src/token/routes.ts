@@ -4,8 +4,8 @@ export interface TokenRoutes {
   'token-list': RouteRecordInfo<
     'token-list',
     '/tokens',
-    Record<never, never>,
-    Record<never, never>
+    Record<string, never>,
+    Record<string, never>
   >
 }
 

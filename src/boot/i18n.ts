@@ -24,6 +24,7 @@ declare module 'vue-i18n' {
 export default defineBoot(({ app }) => {
   const i18n = createI18n<{ message: MessageSchema }>({
     locale: 'en-US',
+    // eslint-disable-next-line @typescript-eslint/no-deprecated -- Required for Composition API in Vue I18n 11.
     legacy: false,
     messages,
   })

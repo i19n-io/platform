@@ -4,8 +4,8 @@ export interface AuthRoutes {
   'auth-login': RouteRecordInfo<
     'auth-login',
     '/login',
-    Record<never, never>,
-    Record<never, never>
+    Record<string, never>,
+    Record<string, never>
   >
 }
 
