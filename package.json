@@ -56,7 +56,7 @@
     "eslint-plugin-unicorn": "^60.0.0",
     "eslint-plugin-vue": "^9.33.0",
     "globals": "^15.15.0",
-    "jiti": "^2.6.1",
+    "jiti": "^2.7.0",
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.8.1",
     "typescript": "~5.9.3",
