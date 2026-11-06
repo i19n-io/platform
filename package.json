@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.18.0",
-    "graphql": "^16.14.2",
+    "graphql": "^16.15.0",
     "pinia": "^3.0.4",
     "quasar": "~2.18.7",
     "villus": "^3.5.2",
